@@ -64,10 +64,15 @@ label{
 
 #btn{
     width: 200px;
-    height: 30px;
+    height: 40px;
+    font-size: 18px;
     border: none;
     border-radius: 10px;
     background-color: lightgray;
+}
+#btn>a{
+    color: black;
+    text-decoration: none;
 }
 #btn-div{
     display: flex;
