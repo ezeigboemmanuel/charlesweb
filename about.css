@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+
+}
+#nav-ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 30px 14px 30px 0;
+}
+.nav-li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px 8px 30px 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-li-a:hover{
+    border-bottom: 2px solid black;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    top: -10px;
+}
+#bars{
+    font-size: 28px;
+}
+
+#bars{
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    display: none;
+}
+label{
+    padding: 35px 0 35px 0;
+}
+
+#about-text{
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text{
+    text-align: center;
+    width: 700px;
+    line-height: 1.5em;
+}
+
+#btn{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+#btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+#footer{
+    background-color: rgb(37, 36, 36);
+    color: white;
+    height: 200px;
+}
+#footer>p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+
+#icon-div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.icons>a>i{
+    font-size: 30px;
+    color: white;
+    padding: 20px 20px 0 0;
+}
+.icons>a>i:hover{
+    color: lightgray;
+    font-size: 25px;
+}
+
+@media (max-width: 580px){
+    #nav-ul{
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    .nav-li{
+        padding-top: 20px;
+    }
+    .nav-li-a:hover{
+        border: none;
+        text-decoration: underline;
+    }
+    #bars{
+        display: block;
+    }
+    #nav-ul.show{
+        display: block;
+        width: 100%;
+    }
+}

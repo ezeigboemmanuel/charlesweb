@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 #nav{
     display: flex;
@@ -29,15 +30,15 @@
     border-bottom: 2px solid black;
 }
 #logo{
+    width: 100px;
     position: absolute;
-    width: 200px;
-    top: -76px;
+    top: -10px;
 }
 #bars{
     font-size: 28px;
 }
 
-.toggleclass{
+#bars{
     position: absolute;
     top: 1.3rem;
     right: 1rem;
@@ -74,7 +75,7 @@ label{
 .items{
     box-shadow: 3px 3px 8px grey;
     width: 430px;
-    height: 600px;
+    height: auto;
     position: relative;
     margin-top: 15px;
     border-radius: 10px;
@@ -101,7 +102,7 @@ label{
 #footer{
     background-color: rgb(37, 36, 36);
     color: white;
-    height: 300px;
+    height: 200px;
 }
 #footer>p{
     font-size: 20px;
@@ -126,31 +127,58 @@ label{
     font-size: 25px;
 }
 
+#btn-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
 .btn{
     cursor: pointer;
-    width: 120px;
+    width: 90%;
     height: 50px;
     background-color: lightslategrey;
     color: white;
     font-family: 'Roboto', sans-serif;
     border: none;
-    position: absolute;
-    bottom: 10px;
-    right: 170px;
-    border-radius: 20px;
     font-size: 17px;
+    margin-top: 10px;
 }
 .btn:hover{
     background-color: rgb(83, 94, 104);   
 }
+.call-btn{
+    cursor: pointer;
+    width: 90%;
+    height: 50px;
+    background-color: rgb(39, 46, 53);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.call-btn>a{
+    color: white;
+    text-decoration: none;
+}
+
+.price-text{
+    padding: 0 10px;
+    text-align: center;
+}
+.price{
+    text-align: center;
+    font-weight: 1000;
+
+}
+
 
 @media (max-width: 580px){
-    #nav{
-        flex-direction: column;
-    }
-    #nav.active{
-        display: block;
-    }
     #nav-ul{
         flex-direction: column;
         text-align: center;
@@ -163,18 +191,22 @@ label{
         border: none;
         text-decoration: underline;
     }
-    .toggleclass{
+    #bars{
         display: block;
     }
     .items{
-        width: 340px;
-        height: 500px;
+        width: 300px;
+        height: auto;
         justify-content: center;
         align-items: center;
         margin-left: 10px;
     }
+    #nav-ul.show{
+        display: block;
+        width: 100%;
+    }
     .imgs{
-        width: 340px;
+        width: 300px;
     }
     .btn{
         right: 100px;
@@ -205,10 +237,4 @@ label{
             background-size: 300px;
         }
     }
-}
-
-
-#marq{
-    display: flex;
-    justify-content: space-around;
 }
