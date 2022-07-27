@@ -80,7 +80,6 @@ label{
     margin-top: 15px;
     border-radius: 10px;
     margin-right: 10px;
-    cursor: pointer;
 }
 .items:hover{
     box-shadow: 5px 6px 8px grey; 
@@ -149,6 +148,10 @@ label{
 }
 .btn:hover{
     background-color: rgb(83, 94, 104);   
+}
+.btn>a{
+    color: white;
+    text-decoration: none;
 }
 .call-btn{
     cursor: pointer;
